@@ -44,7 +44,31 @@
 
 	- mvnrepository.com search : tocat jasper
 	  compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '8.5.4'
+	- Eclipse -> Gradle Refresh 
 	- build.gradle dependancy : jasper
 	- notepad src/main/webapp/Hello.jsp
 	- gradle bootRun
-	- FireFor ==> http://localhost8080/Hello.jsp
+	- FireFox ==> http://localhost8080/Hello.jsp
+	
+5. Servlet 설정
+	
+	- Project facets 추가
+		- >> Dynamic Web Module 3.1
+		- >> java 1.8
+		- >> javaScript 1.0
+	- MosaicWebApplication.java << @ServletComponentScan 추가
+	- notepad com.hybrid.servlet.HelloServlet.java 생성
+	- gradle bootRun
+	- FireFox ==> http://localhost8080/HelloServlet
+
+6. SpringLoaded 설정(리로드 기능)
+	
+	- mvnRepository.com >> search : springloaded
+	- build.gradle에 설정(두 곳)
+		compile group: 'org.springframework', name: 'springloaded', version: '1.2.6.RELEASE'
+		classpath("org.springframework:springloaded:1.2.6.RELEASE")
+	- Eclipse Output Directory 변경
+	  bin ==> build/classes/main	
+	
+		
+	
