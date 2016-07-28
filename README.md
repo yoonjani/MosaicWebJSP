@@ -12,6 +12,7 @@
 2. 형상관리
 
 	- Remote Repository 생성(github)
+	
 	- Local Repository 생성
 		- >> dir /a > .gitignore
 		- >> notepad .gitignore 편집
@@ -20,10 +21,14 @@
 		- >> git add *
 		- >> git commit -m "first commit"
 		- >> git log (commit 상황 확인)
+		
 	- Local Remote push(최초 동기화)
 		- >> git remote add origin https://github.com/yoonjani/MosaicWeb.git
 		- >> git remote -v
 		- >> git remote remove origin (git 넣기)
 		- >> git push -u origin master
 
-3. 
+	- 개발자 2가 clone 수행
+		- >> git clone https://github.com/yoonjani/MosaicWeb.git
+		- >> git clone https://github.com/yoonjani/MosaicWeb.git MosaicWebDev
+		- >> Eclipse Gradle Import
