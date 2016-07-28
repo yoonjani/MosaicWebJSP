@@ -32,3 +32,12 @@
 		- >> git clone https://github.com/yoonjani/MosaicWeb.git
 		- >> git clone https://github.com/yoonjani/MosaicWeb.git MosaicWebDev
 		- >> Eclipse Gradle Import
+3. HTML 설정
+ 
+	- 설정 불필요
+	- mkdir src/main/webapp 폴더 생성
+	- notepad src/main/webapp/Hello.html
+	- gradle bootRun
+	- FireFox ==> http://localhost8080/Hello.html
+	- 
+
