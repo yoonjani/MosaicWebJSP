@@ -19,6 +19,7 @@
 		>> git status (현재 Working local repository 영역과  Stage 영역 확인하여 GIT 영역으로 보낼 준비한다.)
 		>> git add *
 		>> git commit -m "first commit"
+		>> git log (commit 상황 확인)
 	- Local Remote push(최초 동기화)
 		>> git remote add origin https://github.com/webprotocols/MosaicWeb.git
 		>> git push -u origin master
