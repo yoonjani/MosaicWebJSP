@@ -39,5 +39,11 @@
 	- notepad src/main/webapp/Hello.html
 	- gradle bootRun
 	- FireFox ==> http://localhost8080/Hello.html
-	- 
+	
+4. JSP 설정
 
+	- mvnrepository.com search : jasper
+	- build.gradle dependancy : jasper
+	- notepad src/main/webapp/Hello.jsp
+	- gradle bootRun
+	- FireFor ==> http://localhost8080/Hello.jsp
