@@ -42,7 +42,8 @@
 	
 4. JSP 설정
 
-	- mvnrepository.com search : jasper
+	- mvnrepository.com search : tocat jasper
+	  compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '8.5.4'
 	- build.gradle dependancy : jasper
 	- notepad src/main/webapp/Hello.jsp
 	- gradle bootRun
