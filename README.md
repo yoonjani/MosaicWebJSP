@@ -70,5 +70,26 @@
 	- Eclipse Output Directory 변경
 	  bin ==> build/classes/main	
 	
-		
+7. Mybatis 설정
+
+	-mvnRepository.com >> search : spring boot mybatis
+	- ojdbc7.jar 복사 (위치 : src/main/webapp/WEB-INF/lib/ojdbc7.jar) 
+	- build.gradle에 Dependancy 설정
+		compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.1.1'
+		compile files('src/main/webapp/WEB-INF/lib/ojdbc7.jar');
+	- application.properties
+		- >> spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+		- >> spring.datasource.url=jdbc:oracle:thin:@00.00.00.00:1521:orcl
+		- >> spring.datasource.username=scott
+		- >> spring.datasource.password=*****
+			
+	- Eclipse Gradle Refresh 수행	
+	- gradle bootRun
+	- notepad src/main/java/com/hybrid/mapper/DeptMapper.java 인터페이스 생성
+	- notepad src/main/java/com/hybrid/dao/DeptDao.java 클래스 생성
+	- notepad src/main/java/com/hybrid/domain/Dept.java 클래스 생성
+	- notepad src/test/java/com/hybrid/mapper/DeptMapperTest.java 클래스 생성
+	- notepad src/main/webapp/dept.jsp 클래스 생성
+	
+
 	
