@@ -61,6 +61,12 @@ public class PrimaryController {
         	url.setText(homeAddress);
         	engine.load(homeAddress);
         });
+        
+        url.setOnAction(event -> {
+        	
+        	engine.load(url.getText());
+        });
+        
     }
     
     public void postInit() {

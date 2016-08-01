@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Hello.jsp</title>
+<title>404.jsp</title>
 </head>
 <body>
-<% for (int i=0; i<10; i++) { %>
-<h1>Hello.JSP 실행 확인됨 i = <%= i %></h1>
-<% } %>
 
+<hr>
+<h1>Not Found</h1>
+<hr>
 
 </body>
 </html>
