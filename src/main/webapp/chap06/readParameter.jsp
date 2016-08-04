@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page errorPage = "/chap06/error/viewErrorMessage.jsp" %>
 <html>
 <head><title>파라미터 출력</title></head>
 <body>
